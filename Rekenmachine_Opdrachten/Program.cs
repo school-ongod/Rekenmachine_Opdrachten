@@ -10,7 +10,15 @@ namespace Rekenmachine_Opdrachten
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            if (args != null && args.Length > 0)
+            {
+                Console.WriteLine($"Welkom {args[0].ToString()}");
+            }
+            else
+            {
+                Console.WriteLine("Geef je naam in als argument");
+            }
+            Console.WriteLine(DateTime.Now.ToString("dd MMMM yyyy - HH:mm:ss"));
         }
     }
 }
